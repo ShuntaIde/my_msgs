@@ -25,8 +25,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   # "srv/AddTwoInts.srv"
   # "srv/JointsCor.srv"
   # "srv/X510.srv"
-  DEPENDENCIES geometry_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
-  DEPENDENCIES std_msgs # Add packages that above messages depend on, in this case std_msgs for Header
+  DEPENDENCIES geometry_msgs std_msgs # Add packages that above messages depend on, in this case std_msgs for Header
 )
 
 if(BUILD_TESTING)
